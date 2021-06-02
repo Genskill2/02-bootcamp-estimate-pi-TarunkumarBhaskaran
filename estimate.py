@@ -1,14 +1,15 @@
 import math
 import unittest
-def wallis(n):
-  e=1
-  for i in range (1,n+1):
-    
-    a=float((2*i)**2)
-    b=float(((2*i)-1)*((2*i)+1))
-    c=float(a/b)
-    e*=c
-  return 2*e
+def wallis(i) :
+    x=1  
+    for n in range(1,i):
+        a= 4*n*n
+        b= a - 1
+        c=a/b
+        x=x*c
+
+    x=x*2
+    return x
 def monte_carlo(n) :
     ins=0
     out=0
